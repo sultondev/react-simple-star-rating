@@ -278,7 +278,7 @@ export function Rating({
         onClick={readonly ? undefined : handleClick}
         aria-hidden='true'
       >
-        <span
+        <div
           className={`${css.emptyIcons} ${emptyClassName}`}
           style={{
             color: emptyColor,
@@ -298,9 +298,9 @@ export function Rating({
               )}
             </Fragment>
           ))}
-        </span>
+        </div>
 
-        <span
+        <div
           className={`${css.fillIcons} ${fillClassName}`}
           style={{
             [rtl ? 'right' : 'left']: 0,
@@ -324,7 +324,7 @@ export function Rating({
               )}
             </Fragment>
           ))}
-        </span>
+        </div>
       </span>
 
       {showTooltip && (
